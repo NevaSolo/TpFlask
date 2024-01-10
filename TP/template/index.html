@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/assets/bootstrap/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/assets/css/Login-Form-Basic-icons.css')}}">
+</head>
+
+<body>
+    
+{% block header %}
+{% include "components/_header.html" %}
+{% endblock %}
+
+{% block content %}
+{% include "components/_content.html" %}
+{% endblock %}
+
+{% block footer %}
+{% include "components/_footer.html" %}
+{% endblock %}
+
+   
+    
+    <script src="{{url_for('static',filename='css/assets/bootstrap/js/bootstrap.min.js')}}"></script>
+</body>
+
+</html>
